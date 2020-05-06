@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         //textLayout = (LinearLayout) findViewById(R.id.textlay);
 
-        //create retrieveData object to parse json
+        //create retrieveData object to parse json file
         final retrieveData process = new retrieveData();
         process.execute();
 
