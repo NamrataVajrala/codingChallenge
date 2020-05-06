@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Events Page"
+                android:textColor="#066897"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="DAYS:"
+                android:textColor="#052342"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/friday"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:background="#3CF7F3F3"
+                    android:text="Friday" />
+
+                <Button
+                    android:id="@+id/saturday"
+                    android:layout_width="143dp"
+                    android:layout_height="wrap_content"
+                    android:background="#2074BFC2"
+                    android:text="Saturday" />
+
+                <Button
+                    android:id="@+id/sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#163D12FE"
+                    android:text="Sunday" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   " />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/event"
+                    android:layout_width="319dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="125dp"
+                    android:layout_marginEnd="205dp"
+                    android:layout_marginLeft="206dp"
+                    android:layout_marginRight="205dp"
+                    android:layout_marginStart="206dp"
+                    android:layout_marginTop="116dp"
+                    android:textColor="#052342"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-light"
+                    app:layout_constraintBottom_toTopOf="@+id/event2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/event2"
+                    android:layout_width="319dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="116dp"
+                    android:layout_marginEnd="207dp"
+                    android:layout_marginLeft="206dp"
+                    android:layout_marginRight="207dp"
+                    android:layout_marginStart="206dp"
+                    android:layout_marginTop="120dp"
+                    android:textColor="#052342"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-light"
+                    app:layout_constraintBottom_toTopOf="@+id/event3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/event" />
+
+                <TextView
+                    android:id="@+id/event3"
+                    android:layout_width="319dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#052342"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-light"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="402dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/textlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
